@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>cookies</title>
+</head>
+<body>
+    {{name}}
+    <h1>
+        No of visits
+    </h1>
+    {% for variable in vari %}
+      <div> 
+        <section>
+          <h1>
+            {{variable.email}}
+          </h1>
+        </section>
+      </div>
+        {% endfor %}
+    </section>
+    {% if name == 'mohanrajlenova@gmail.com' %}
+            <h1>
+                login success
+            </h1>
+            {% else %}
+            <h1>
+                login unsuccessful
+            </h1>  
+        {% endif %}
+        <button>
+           <a href="{% url 'logout' %}">
+                logout
+           </a>
+        </button>
+</body>
+</html>
